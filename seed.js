@@ -141,6 +141,7 @@ const seedDatabase = async () => {
       {
         nom: 'Le Louis XV',
         adresse: 'Place du Casino, 98000 Monaco',
+        categorie: 'Gastronomique',
         anneeOuverture: 1987,
         chefs: [insertedChefs[0]._id],
         recettes: [insertedRecettes[0]._id]
@@ -148,6 +149,7 @@ const seedDatabase = async () => {
       {
         nom: 'L\'Atelier de Joël Robuchon',
         adresse: '5 Rue de Montalembert, 75007 Paris',
+        categorie: 'Gastronomique',
         anneeOuverture: 2003,
         chefs: [insertedChefs[1]._id],
         recettes: [insertedRecettes[1]._id]
@@ -155,6 +157,7 @@ const seedDatabase = async () => {
       {
         nom: 'L\'Auberge du Pont de Collonges',
         adresse: '40 Quai de la Plage, 69660 Collonges-au-Mont-d\'Or',
+        categorie: 'Gastronomique',
         anneeOuverture: 1965,
         chefs: [insertedChefs[2]._id],
         recettes: [insertedRecettes[2]._id]
@@ -162,6 +165,7 @@ const seedDatabase = async () => {
       {
         nom: 'Le Quatrième Mur',
         adresse: '2 Place de la Comédie, 33000 Bordeaux',
+        categorie: 'Brasserie',
         anneeOuverture: 2015,
         chefs: [insertedChefs[3]._id],
         recettes: [insertedRecettes[3]._id]
@@ -169,6 +173,7 @@ const seedDatabase = async () => {
       {
         nom: 'Le Chardenoux',
         adresse: '1 Rue Jules Vallès, 75011 Paris',
+        categorie: 'Bistrot',
         anneeOuverture: 2019,
         chefs: [insertedChefs[4]._id],
         recettes: [insertedRecettes[4]._id]
@@ -176,6 +181,7 @@ const seedDatabase = async () => {
       {
         nom: 'La Pâtisserie',
         adresse: '3 Rue du Bac, 75007 Paris',
+        categorie: 'Pâtisserie',
         anneeOuverture: 2008,
         chefs: [insertedChefs[5]._id],
         recettes: [insertedRecettes[5]._id]
@@ -183,6 +189,7 @@ const seedDatabase = async () => {
       {
         nom: 'Maison Pic',
         adresse: '285 Avenue Victor Hugo, 26000 Valence',
+        categorie: 'Gastronomique',
         anneeOuverture: 1889,
         chefs: [insertedChefs[6]._id],
         recettes: [insertedRecettes[6]._id]
@@ -190,6 +197,7 @@ const seedDatabase = async () => {
       {
         nom: 'Maison Troisgros',
         adresse: '728 Route de Villerest, 42155 Ouches',
+        categorie: 'Gastronomique',
         anneeOuverture: 1968,
         chefs: [insertedChefs[7]._id],
         recettes: [insertedRecettes[7]._id]
@@ -197,6 +205,7 @@ const seedDatabase = async () => {
       {
         nom: 'Marsan',
         adresse: '4 Rue d\'Assas, 75006 Paris',
+        categorie: 'Gastronomique',
         anneeOuverture: 2019,
         chefs: [insertedChefs[8]._id],
         recettes: [insertedRecettes[8]._id]
@@ -204,6 +213,7 @@ const seedDatabase = async () => {
       {
         nom: 'Pierre Gagnaire',
         adresse: '6 Rue Balzac, 75008 Paris',
+        categorie: 'Gastronomique',
         anneeOuverture: 1996,
         chefs: [insertedChefs[9]._id],
         recettes: [insertedRecettes[9]._id]
