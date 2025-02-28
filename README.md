@@ -92,7 +92,6 @@ curl -X POST http://localhost:3000/chefs/add \
     "nom": "Veyrat",
     "prenom": "Marc",
     "specialite": "Mountain cuisine",
-    "experience": 32
   }'
 ```
 
@@ -105,7 +104,6 @@ curl -X POST http://localhost:3000/recette/add \
     "nom": "Ratatouille",
     "ingredients": ["Zucchini", "Eggplant", "Bell peppers", "Tomatoes", "Onions", "Olive oil"],
     "tempsPreparation": 60,
-    "difficulte": "Medium",
     "chef": "CHEF_ID"
   }'
 ```
