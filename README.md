@@ -11,6 +11,7 @@ This API allows managing data related to chefs, recipes, and restaurants. It pro
   - [Recipes](#recipes)
   - [Restaurants](#restaurants)
 - [Usage Examples](#usage-examples)
+- [ENV FILE](#env-file)
 
 ## Installation
 
@@ -121,4 +122,11 @@ curl -X POST http://localhost:3000/restaurant/add \
     "chefs": ["CHEF_ID"],
     "recettes": ["RECIPE_ID"]
   }'
+```
+
+## ENV FILE
+
+```bash
+MONGODB_URI = mongodb://localhost:27017/your_DB_name
+PORT = your_port
 ```
