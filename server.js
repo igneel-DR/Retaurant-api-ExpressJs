@@ -23,6 +23,9 @@ app.use("/reccete",recceteRoute)
 const restaurantRoute = require('./Routes/Restaurant'); 
 app.use("/restaurant",restaurantRoute) 
 
+const user = require('./Routes/User'); 
+app.use("/user",user) 
+
 app.listen(port, () => {
     console.log(`Server running at http://${host}:${port}`);
 });

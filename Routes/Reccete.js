@@ -1,13 +1,15 @@
 const express = require('express')
 const router = express.Router() 
 
+const {verifyToken} = require('../Middleware/auth')
+
 const recceteModel = require('../Models/RecceteModel');
 
-router.get("/",(req,res)=>{ 
+router.get("/", verifyToken, (req,res)=>{ 
     res.send("Reccete route is displaying data") 
 })
 
-router.get("/all", async (req,res)=>{ 
+router.get("/all", verifyToken, async (req,res)=>{ 
     try {
         const reccetes = await recceteModel.find({});
         res.json(reccetes)
@@ -17,7 +19,7 @@ router.get("/all", async (req,res)=>{
     }
 })
 
-router.get("/names", async (req,res)=>{ 
+router.get("/names", verifyToken, async (req,res)=>{ 
     try {
         const reccetes = await recceteModel.find({}, {_id: 0}).select('nom');
         res.json(reccetes)
@@ -27,7 +29,7 @@ router.get("/names", async (req,res)=>{
     }
 })
 
-router.post("/add", async(req,res)=>{ 
+router.post("/add", verifyToken, async(req,res)=>{ 
     try {
         const date = await recceteModel.insertOne(req.body);
         res.json(date)
@@ -37,7 +39,7 @@ router.post("/add", async(req,res)=>{
     }
 })
 
-router.put("/update/:name", async (req,res)=>{ 
+router.put("/update/:name", verifyToken, async (req,res)=>{ 
     try {
         const date = await recceteModel.updateOne({nom: req.params.name}, req.body);
         res.json(date)
@@ -47,7 +49,7 @@ router.put("/update/:name", async (req,res)=>{
     }
 })
 
-router.delete("/delete/:name", async (req,res)=>{ 
+router.delete("/delete/:name", verifyToken, async (req,res)=>{ 
     try {
         const date = await recceteModel.deleteOne({nom: req.params.name});
         res.json(date)
